@@ -1,5 +1,7 @@
 package com.drawinng.module;
 
+import com.drawinng.annotations.ColorValue;
+import com.drawinng.annotations.EdgeValue;
 import com.drawinng.practice.DrawShape;
 import com.drawinng.practice.DrawSquare;
 import com.drawinng.request.Requests;
@@ -13,6 +15,8 @@ public class AppModule extends AbstractModule {
 		// object creation
 		bind(DrawShape.class).to(DrawSquare.class);
 		bind(Requests.class).to(RequestsChild.class);
+		bind(String.class).annotatedWith(ColorValue.class).toInstance("RED");;
+		bind(Integer.class).annotatedWith(EdgeValue.class).toInstance(42);
 	}
 
 }
