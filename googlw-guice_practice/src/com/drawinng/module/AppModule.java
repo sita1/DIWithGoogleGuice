@@ -8,8 +8,9 @@ import com.google.inject.AbstractModule;
 
 public class AppModule extends AbstractModule {
 	
-	@Override
+	@Override   
 	protected void configure() {
+		// object creation
 		bind(DrawShape.class).to(DrawSquare.class);
 		bind(Requests.class).to(RequestsChild.class);
 	}
