@@ -9,7 +9,7 @@ import com.drawinng.request.RequestsChild;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 
-public class MainApplication {
+public class MainApplication {   
 	private static final String SQUARE_DRAW = "Square";
 	
 	private static void sendRequest(String shape)
