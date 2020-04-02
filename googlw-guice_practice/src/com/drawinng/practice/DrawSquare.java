@@ -14,8 +14,9 @@ public class DrawSquare implements DrawShape {
 	
 
 	@Override
-	public void draw() {
+	public String draw() {
 		System.out.print("drawing square color : " +color +" edge : "+ edge);
+		return "drawing square color : " +color +" edge : "+ edge;
 		
 	}
 
