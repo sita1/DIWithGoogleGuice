@@ -14,5 +14,10 @@ public class SquareTest {
 	public void squareColorAndEdge_PostiveCase() {
 	assertEquals("drawing square color : RED edge : 42",drawSquare.draw());
 	}
+	
+	@Test
+	public void squareColorAndEdge_NegativeCase() {
+	assertEquals("drawing square color : BLUE edge : 42",drawSquare.draw());
+	}
 
 }
